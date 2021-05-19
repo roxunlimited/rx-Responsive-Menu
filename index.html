@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Responsive Menu</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script type="text/javascript" src="rx-res-menu/rx-res-menu.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="rx-res-menu/rx-res-menu.css" />
+</head>
+
+<body>
+	<nav>
+		<div class="rx-res-menu roboto">
+			<div class="breadcrumb">Menu</div>
+			<ul>
+				<li><a href="">Phasellus</a></li>
+				<li class="divider"></li>
+				<li><a href="">Aliquam Sed</a></li>
+				<li class="divider"></li>
+				<li>
+					<span>Maecenas</span>
+					<ul>
+						<li><a href="">Interdum et malesuada</a></li>
+						<li><a href="">Fusce vel nibh non</a></li>
+						<li><a href="">Faucibus tortor</a></li>
+						<li><a href="">Vestibulum dapibus</a></li>
+					</ul>
+				</li>
+				<li class="divider"></li>
+				<li><a href="">Sollicitudin</a></li>
+				<li class="divider"></li>
+				<li><a href="">Fermentum Enim</a></li>
+			</ul>
+		</div>
+	</nav>
+</body>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.rx-res-menu').rxResMenu();
+	});
+</script>
+</html>

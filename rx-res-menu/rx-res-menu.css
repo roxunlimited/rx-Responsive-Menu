@@ -1,0 +1,234 @@
+.animated {
+	animation-duration: 0.3s;
+	animation-fill-mode: both;
+	-webkit-animation-duration: 0.3s;
+	-webkit-animation-fill-mode: both;
+}
+
+.fadeIn {
+	animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;
+}
+
+.roboto {
+	font-family: 'Roboto', sans-serif;
+}
+
+.rx-res-menu {
+	background-color: #146caa;
+}
+
+.rx-res-menu .breadcrumb {
+	display: none;
+}
+
+.rx-res-menu ul {
+	display: flex;
+	display: -ms-flexbox;
+	flex-direction: row;
+	font-size: 15px;
+	height: 40px;
+	justify-content: space-between;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	-ms-flex-direction: row;
+	-ms-flex-pack: justify;
+}
+
+.rx-res-menu ul li {
+	color: #fff;
+	flex-grow: 1;
+	height: 100%;
+	position: relative;
+	text-align: center;
+	transition: all 0.1s ease-in-out;
+	-ms-flex-positive: 1;
+	-webkit-transition: all 0.1s ease-in-out;
+}
+
+.rx-res-menu ul li .drop-icon {
+	background: url(drop-arrow.svg) no-repeat center;
+	bottom: 0;
+	height: 6px;
+	margin: auto;
+	position: absolute;
+	right: 8px;
+	top: 0;
+	width: 10px;
+}
+
+.rx-res-menu ul li a:hover, .rx-res-menu ul li a:focus, .rx-res-menu ul li a:active {
+	color: #fff !important;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.rx-res-menu ul li span {
+	cursor: default;
+}
+
+.rx-res-menu ul li span, .rx-res-menu ul li a {
+	color: #fff !important;
+	display: block;
+	line-height: 1;
+	padding: 13px 0;
+	text-decoration: none;
+}
+
+.rx-res-menu ul li ul {
+	background-color: #000;
+	display: none;
+	flex-direction: column;
+	height: auto;
+	left: 0;
+	margin-top: 40px;
+	min-width: 250px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	-ms-flex-direction: column;
+}
+
+.rx-res-menu ul li ul li {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+	text-align: left;
+	transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+}
+
+.rx-res-menu ul li ul li a, .rx-res-menu ul li ul li a:active {
+	color: #fff !important;
+	line-height: 1;
+	padding: 8px 0 8px 20px;
+	text-decoration: none;
+}
+
+.rx-res-menu ul li ul li a:hover, .rx-res-menu ul li ul li a:focus  {
+	color: #fff !important;
+	cursor: pointer;
+	text-decoration: none;
+	background: url(right-arrow.svg) no-repeat center right 10px;
+}
+
+.rx-res-menu ul li ul li span {
+	cursor: default;
+	line-height: 1;
+	padding: 8px 0 8px 20px;
+}
+
+.rx-res-menu ul li ul li:last-child span, .rx-res-menu ul li ul li:last-child a {
+	padding-bottom: 10px;
+}
+
+.rx-res-menu ul li ul li:last-child {
+	border-bottom: 0 none;
+}
+
+.rx-res-menu ul li.divider {
+	background-color: rgba(255, 255, 255, 0.4);
+	flex-grow: 0;
+	height: 16px;
+	margin: -8px 2px 0 2px;
+	position: relative;
+	top: 50%;
+	width: 1px;
+	-ms-flex-positive: 0;
+}
+
+.rx-res-menu ul li:hover, .rx-res-menu ul li ul li:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+}
+
+.rx-res-menu.mobile-menu {
+	height: auto !important;
+}
+
+.rx-res-menu, .rx-res-menu * {
+	box-sizing: border-box;
+}
+
+.rx-res-menu.mobile-menu .breadcrumb, .rx-res-menu.mobile-menu .breadcrumb:active {
+	background: url(breadcrumb.svg) no-repeat top 10px right 12px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	font-size: 15px;
+	height: 34px;
+	padding: 8px 32px 8px 0;
+	text-align: right;
+	transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+}
+
+.rx-res-menu.mobile-menu .breadcrumb:hover, .rx-res-menu.mobile-menu .breadcrumb:focus {
+	background-color: rgba(255, 255, 255, 0.2);
+	transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+}
+
+.rx-res-menu.mobile-menu > ul {
+	display: none;
+}
+
+.rx-res-menu.mobile-menu ul {
+	flex-direction: column;
+	height: auto;
+	-ms-flex-direction: column;
+}
+
+.rx-res-menu.mobile-menu ul li {
+	height: 30px;
+	text-align: left;
+}
+
+.rx-res-menu.mobile-menu ul li .drop-icon {
+	margin: 0;
+	top: 7px;
+}
+
+.rx-res-menu.mobile-menu ul li span, .rx-res-menu.mobile-menu ul li a {
+	padding: 7px 0 9px 20px;
+}
+
+.rx-res-menu.mobile-menu ul li ul {
+	display: flex;
+	display: -ms-flexbox;
+	margin-top: 0;
+	position: relative;
+}
+
+.rx-res-menu.mobile-menu ul li.divider {
+	background-color: rgba(255, 255, 255, 0.2);
+	height: 1px;
+	margin: 0;
+	position: relative;
+	width: 100%;
+}
+
+.rx-res-menu.mobile-menu ul li.drop-menu {
+	height: auto;
+}
+
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
